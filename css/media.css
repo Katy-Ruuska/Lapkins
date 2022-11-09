@@ -1,0 +1,40 @@
+@media (min-width: 1280px) {
+    .site-header .wrapper {
+        background-image: url(../img/i\ 1.png);
+        background-repeat: no-repeat;
+        background-position: right 150px;
+}
+}
+@media (min-width: 576px) {
+    .slider__item {
+      height: 250px;
+    }
+
+    .slider__item_inner {
+      flex-direction: row;
+    }
+
+    .slider__item_testimonial {
+      margin-left: 15px;
+    }
+
+    .slider__item_img {
+      flex: 0 0 150px;
+      max-width: 150px;
+    }
+
+    .slider__item_testimonial {
+      text-align: left;
+    }
+  }
+
+  .slider__item_name {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #8B4513;
+  }
+
+  .slider__item_text {
+    font-size: 16px;
+    color: #8B4513;
+  }
