@@ -1,6 +1,6 @@
-.slider {
+/* .slider {
     max-width: 960px;
-  }
+  } */
   .slider__items {
     counter-reset: slide;
   }

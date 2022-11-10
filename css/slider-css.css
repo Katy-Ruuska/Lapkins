@@ -1,0 +1,46 @@
+.slider {
+	position:relative;
+	width:81.5625%;
+    margin: 0 auto;
+	padding-top:250px;/*высота переключателей от верха*/
+	text-align:center;
+    border-radius: 25px;
+    background-color: #FAEBD7;
+}
+.slider__check {
+    position:absolute;
+    clip:rect(0 0 0 0);
+    overflow:hidden;
+}
+.slider__block {
+    position:absolute;
+    top:0;
+    left:0;
+}
+.slider__label {
+    /*сами кнопочки*/
+    overflow:hidden;
+    display:inline-block;
+    width:18px;
+    height:18px;
+    background:#8B4513;
+    margin: 0 48px;
+    border-radius:50%;
+    text-indent:-9999px;
+}
+
+/* Display */
+.slider__block {
+    display:none;
+}
+.slider__check:checked + .slider__label + .slider__block {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    display: block;
+}
+
+/* Current */
+.slider__check:checked + .slider__label {
+    background:#C00;
+}
