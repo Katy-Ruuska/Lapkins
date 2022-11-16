@@ -1,40 +1,86 @@
 @media (min-width: 1280px) {
-    .site-header .wrapper {
-        background-image: url(../img/i\ 1.png);
-        background-repeat: no-repeat;
-        background-position: right 150px;
+  .site-header .wrapper {
+      background-image: url(../img/i\ 1.png);
+      background-repeat: no-repeat;
+      background-position: right 150px;
 }
 }
+@media (max-width: 1024px) {
+.wrapper {
+    width: 85%;
+}
+.content .column-container:first-child {
+    flex-direction: column;
+}
+.content .column-container:first-child .right-column {
+    max-width: none;
+}
+}
+@media (max-width: 960px) {
+.footer-columns .right-column {
+    column-gap: 20px;
+}
+.vacation-request .column-container {
+    flex-wrap: wrap;
+}
+}
+@media (max-width: 768px) {
+.column-container 
+    flex-wrap: wrap
+}
+.content .left-column img {
+    width: 300px;
+    height: auto;
+}
+.content .column-container:first-child {
+    flex-direction: column-reverse;
+}
+.footer-columns {
+    flex-direction: column-reverse;
+}
+.contact-menu {
+    margin: 0;
+    justify-content: center;
+}
+/* .site-menu, .contact-menu {
+    visibility: hidden;
+} */
+/* .main-nav {
+    flex-direction: column;
+} */
+
+
 @media (min-width: 576px) {
-    .slider__item {
-      height: 250px;
-    }
-
-    .slider__item_inner {
-      flex-direction: row;
-    }
-
-    .slider__item_testimonial {
-      margin-left: 15px;
-    }
-
-    .slider__item_img {
-      flex: 0 0 150px;
-      max-width: 150px;
-    }
-
-    .slider__item_testimonial {
-      text-align: left;
-    }
+  .slider__item {
+    height: 250px;
   }
 
-  .slider__item_name {
-    font-size: 20px;
-    margin-bottom: 8px;
-    color: #8B4513;
+  .slider__item_inner {
+    flex-direction: row;
   }
 
-  .slider__item_text {
-    font-size: 16px;
-    color: #8B4513;
+  .slider__item_testimonial {
+    margin-left: 15px;
   }
+
+  /* .slider__item_img {
+    flex: 0 0 150px;
+    max-width: 150px;
+  } */
+
+  .slider__item_testimonial {
+    text-align: left;
+  }
+}
+
+.slider__item_name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #8B4513;
+}
+
+.slider__item_text {
+  font-size: 16px;
+  color: #8B4513;
+}

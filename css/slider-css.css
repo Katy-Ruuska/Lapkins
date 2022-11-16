@@ -3,8 +3,10 @@
 	width:81.5625%;
     margin: 0 auto;
 	padding-top:250px;/*высота переключателей от верха*/
+    padding-bottom: 20px;
 	text-align:center;
     border-radius: 25px;
+    margin-top: 20px;
     background-color: #FAEBD7;
 }
 .slider__check {
@@ -15,8 +17,28 @@
 .slider__block {
     position:absolute;
     top:0;
-    left:0;
+    left: 15%;
+    right: 15%;
+    top: 36px;
+    bottom: 36px;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+.slider__item_testimonial {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.slider__item_photo {
+    flex: 0 0 80px;
+    max-width: 80px;
+  }
 .slider__label {
     /*сами кнопочки*/
     overflow:hidden;
@@ -42,5 +64,5 @@
 
 /* Current */
 .slider__check:checked + .slider__label {
-    background:#C00;
+    background:#DEB887;
 }

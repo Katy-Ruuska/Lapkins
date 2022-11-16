@@ -1,6 +1,10 @@
 .site-menu a:hover {
-    color: #FECA30
+    color: #8B4513;
 }
 .site-menu a:active {
-    color: #8B4513;
+    color: #FECA30;
+}
+.logo:hover img {
+    transform: rotate(45deg);
+    transition-duration: 3s
 }

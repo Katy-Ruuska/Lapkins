@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/slider-css.css">
     <script src="js/slider.js"></script>
 
@@ -16,16 +15,18 @@
 <header class="site-header">
     <div class="wrapper">
         <nav class="main-nav">
-            <img src="img/foot-print 1.png" alt="Foot-print">
-            <a href="/" class="logo">
-                <img src="img/logo.png" alt="Lapkins">
-            </a>
-                <ul class="site-menu">
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Ситтеры</a></li>
-                    <li><a href="#">Фотогалерея</a></li>
-                    <li><a href="#">Паспорт питомца</a></li>
-                </ul>
+            <div class="logo">
+                <img src="img/foot-print 1.png" alt="Foot-print">
+                <a href="/" class="logo">
+                    <img src="img/logo.png" alt="Lapkins">
+                </a>
+                </div>
+                    <ul class="site-menu">
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Ситтеры</a></li>
+                        <li><a href="#">Фотогалерея</a></li>
+                        <li><a href="#">Паспорт питомца</a></li>
+                    </ul>
         </nav>
         <section class="about-us">
             <h1>
@@ -131,53 +132,6 @@
     <section class="reviews">
         <h2 class="hidden">Отзывы</h2>
         <div class="slider__wrapper">
-          <!-- <div class="slider__items">
-            <div class="slider__item">
-              <div class="slider__item_inner">
-                <span class="slider__item_img">
-                  <img class="slider__item_photo" src="./img/ava 1.png" alt="Аватарка с задумчивым котиком">
-                </span>
-                <span class="slider__item_testimonial">
-                  <span class="slider__item_name">Антон и Звездочка</span>
-                  <span class="slider__item_text">
-                    Большое спасибо кэтситтеру Саше! Оставляли Звездочку почти на неделю, и, кажется, наша своенравная кошечка нашла с Сашей общий язык. 
-                    Быстро нашли котоняню, договорились о встрече в удобном месте, обговорили все детали ухода. 
-                    Самый большой плюс - регулярный и подробный рассказ с фото о том, как чувствует себя питомец и чем он занимается. 
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__item_inner">
-                <span class="slider__item_img">
-                  <img src="./img/ava2 1.png" alt="Аватарка с пушистым рыжим котиком">
-                </span>
-                <span class="slider__item_testimonial">
-                  <span class="slider__item_name">Карина и Лунтик</span>
-                  <span class="slider__item_text">
-                    Большое спасибо кэтситтеру Оле! Оставляли Лунтика почти на неделю, и, кажется, наша своенравная кошечка нашла с Олей общий язык. 
-                    Быстро нашли котоняню, договорились о встрече в удобном месте, обговорили все детали ухода. 
-                    Самый большой плюс - регулярный и подробный рассказ с фото о том, как чувствует себя питомец и чем он занимается. 
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__item_inner">
-                <span class="slider__item_img">
-                  <img src="./img//ava3 1.png" alt="Аватарка с серым котиком">
-                </span>
-                <span class="slider__item_testimonial">
-                  <span class="slider__item_name">Алена и Джанда</span>
-                  <span class="slider__item_text">
-                    Большое спасибо кэтситтеру Тане! Оставляли Джанду почти на неделю, и, кажется, наша своенравная кошечка нашла с Таней общий язык. 
-                    Быстро нашли котоняню, договорились о встрече в удобном месте, обговорили все детали ухода. 
-                    Самый большой плюс - регулярный и подробный рассказ с фото о том, как чувствует себя питомец и чем он занимается.
-                  </span>
-                </span>
-              </div>
-            </div>
-          </div> -->
             <div class="slider">
                 <input type="radio" name="slider__check" class="slider__check" id="slider__check-1" checked>
                     <label for="slider__check-1" class="slider__label">1</label>
@@ -198,7 +152,7 @@
                     <label for="slider__check-2" class="slider__label">2</label>
                     <div class="slider__block">
                         <span class="slider__item_img">
-                        <img src="./img/ava2 1.png" alt="Аватарка с пушистым рыжим котиком">
+                        <img class="slider__item_photo" src="./img/ava2 1.png" alt="Аватарка с пушистым рыжим котиком">
                         </span>
                         <span class="slider__item_testimonial">
                         <span class="slider__item_name">Карина и Лунтик</span>
@@ -214,7 +168,7 @@
                     <label for="slider__check-3" class="slider__label">3</label>
                     <div class="slider__block">
                         <span class="slider__item_img">
-                            <img src="./img//ava3 1.png" alt="Аватарка с серым котиком">
+                            <img class="slider__item_photo" src="./img//ava3 1.png" alt="Аватарка с серым котиком">
                           </span>
                           <span class="slider__item_testimonial">
                             <span class="slider__item_name">Алена и Джанда</span>
@@ -228,8 +182,8 @@
                     
             </div>
         </div>
-    <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
-    <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+    <!-- <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+    <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a> -->
     </section>
     <section class="qustions" id="qustions">
         <div class="wrapper">
@@ -237,14 +191,14 @@
             <div class="form">
                 <form action="mailto:" class="form">
                     <div>
-                        <label for="name" class="hidden">Имя</label>
+                        <label for="name" class="hidden"></label>
                         <input type="text" name="name" id="name" placeholder="Имя">
                     </div>
                     <div>
-                        <label for="phone" class="hidden">Телефон</label>
+                        <label for="phone" class="hidden"></label>
                         <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
                     </div>
-                    <div>
+                    <div class="button-wrapper">
                         <button type="submit" class="btn btn-brown">Заказать звонок</button>
                     </div>
                 </form>
@@ -258,15 +212,14 @@
             <div class="left-column">
                 <ul class="footer-menu">
                     <li><a href="#">Контакты</a></li>
-                    <ul class="contact-menu">
-                        <li><a href="telegram:" class="icon icon-telegram">
-                            <span class="hidden">Написать нам</span></a></li>
-                        <li><a href="vkontakte:" class="icon icon-vkontakte">
-                            <span class="hidden">Написать нам</span></a></li>
-                        <li><a href="whatsapp:" class="icon icon-whatsapp">
-                            <span class="hidden">Написать нам</span></a></li>
-                    </ul>
-                </ul>
+                        <ul class="contact-menu">
+                            <li><a href="telegram:" class="icon icon-telegram">
+                                <!-- <span class="hidden">Написать нам</span></a></li> -->
+                            <li><a href="vkontakte:" class="icon icon-vkontakte">
+                                <!-- <span class="hidden">Написать нам</span></a></li> -->
+                            <li><a href="whatsapp:" class="icon icon-whatsapp">
+                                <!-- <span class="hidden">Написать нам</span></a></li> -->
+                        </ul>
                     <li><a href="#">Ситтеры</a></li>
                     <li><a href="#">Гарантия</a></li>
                     <li><a href="#">Фотогалерея</a></li>
